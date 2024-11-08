@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejarah Wisata Van Donker</title>
+  <link rel="stylesheet" href="van donker.css">
+</head>
+<body>
+
+  <header>
+    <button class="back-button" onclick="goBack()">Kembali</button>
+    <h1>Sejarah Wisata Van Donker</h1>
+  </header>
+
+  <section class="history-content">
+    <div class="image-container">
+      <img src="img/van donker.jpg" class="history-img" alt="Sejarah Wisata" onclick="openPopup('img/van donker.jpg')">
+    </div>
+    <p>
+     Wisata Van Donker ini sebenarnya properti syuting dan hanya saja dipamerkan, didalamnya juga terdapat banyak properti syuting seperti kuburan tempat bunuh diri dll. Tetapi tidak boleh ada yang bisa masuk kedalam
+     dan hanya dibuka saat ada syuting dilokasi ini dan, tapi walaupun tidak dibuka lokasi ini juga dapat dinikmati dari luar pagar besi dan juga anda dapat berfoto foto disana
+     tetapi ingat tidak boleh masuk kecuali penanggung jawab wisata.
+    </p>
+  </section>
+
+  <div id="imagePopup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img src="" alt="Popup Image" id="popupImage">
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Sejarah Wisata Van Donker</p>
+  </footer>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function openPopup(imageUrl) {
+      document.getElementById("popupImage").src = imageUrl;
+      document.getElementById("imagePopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

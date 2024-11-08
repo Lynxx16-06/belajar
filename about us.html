@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejarah Wisata Gamplong</title>
+  <link rel="stylesheet" href="style about us.css">
+</head>
+<body>
+
+  <header>
+    <button class="back-button" onclick="goBack()">Kembali</button>
+    <h1>Sejarah Wisata Gamplong</h1>
+  </header>
+
+  <section class="history-content">
+    <div class="image-container">
+      <img src="img/galeri/galeri 3.jpg" class="history-img" alt="Sejarah Wisata" onclick="openPopup('img/galeri/galeri 3.jpg')">
+    </div>
+    <p>
+      Studio Alam Gamplong merupakan destinasi wisata yang mulai dibangun pada akhir 2017, tempat ini dibangun oleh Mooryati Soedibyo selaku pendiri sekaligus pemilik Mustika Ratu Group, destinasi wisata yang berdiri diatas lahan seluas dua hektar ini pada awalnya dibangun untuk keperluan shooting film Sultan Agung The Untold Story. Sekedar informasi saja film Sutan Agung merupakan film bergenre drama kolosial yang bercerita tentang perjuanagn Sultan Agung, film ini di sutradarai oleh sutradara kenamaan tanah air yaitu Hanung Bramantyo.
+
+      Film yang juga dibintangi oleh Puteri Indonesia 2015 Anindya Putri ini mengambil setting abad ke 16 dan 17, lalu setelah dilakukan riset yang mendalam untuk lokasi syuting oleh pihak Hanung Bramantyo dan tim dari Mooryati Soedibyo maka terpilihlah Desa Wisata Gamplong sebagai lokasi syuting nya. Lokasinya yang masih asri menjadikan Desa Wisata Gamplong dirasa sebagai lokasi yang pas untuk pembuatan film ini, selanjutnya setelah terpilih sebagai lokasi syuting lahan seluas 2 hektar ini diubah menjadi kawasan Indonesia zaman dulu.
+      
+      Berbagai macam bangunan semi permanen yang mencerminkan kehidupan Bangsa Indonesia pada abad ke 16 dan 17 berdiri dikawasan ini, mulai dari Gerbang Keraton Karta Kerajaan Mataram, Pendopo Alit Keraton Karta, Pendopo Ageng Keraton Karta, Benteng Holandia atau Batavia, Kawasan Kampung Mataram, hingga Kampung Pecinan masa lampau ada di tempat ini. Bangunan – bangunan tersebut menjadi daya tarik utama dari tempat ini, nuansa Indonesia pada abad 16 & 17 an mejadi background foto yang menarik, selain itu masih banyak lagi properti dan bangunan indonesia Tempoe Doeloe yang bisa dijadikan sebagai spot foto menarik.
+      
+      Setelah selesai digunakan syuting film Sultan Agung bangunan yang ada di Studio Alam Gamplong tidak lantas di robohkan begitu saja, Mooryati Soedibyo selaku pemilik Studio Alam Gamplong menghibahkan tempat ini kepada Pemkab Sleman. Beliau berharap dengan adanya Studio Alam Gamplong ini dapat meningkatkan perekonomian masyarakat Gamplong dan sekitarnya, peresmian ini dilaksanakan pada hari minggu sore 15 Juli 2018 dan dihadiri  langsung oleh Presiden Indonesia Bapak Joko Widodo, selain itu presiden juga berharap tempat ini bisa menjadi destinasi wisata favorit di Jogja.
+      
+      Setelah digunakan syuting pembuatan film Sultan Agung dan ramai dikunjungi wisatawan dari berbagai daerah kini Studio Alam Gamplong kembali booming setelah digunakan sebagai lokasi syuting Bumi Manusia, film yang durasinya mencapai 3 jam ini menjadikan Studio Alam Gamplong sebagai salah satu setting dalam film ini. Sekedar informasi juga film Bumi Manusia merupakan film bergenre drama sejarah yang bercertita tentang kisah dua anak manusia yang meramu cinta di atas pentas pergelutan tanah kolonial pada awal abad 20, film ini juga di sutradarai oleh Hanung Bramantyo dan dibintangi oleh aktor kenamaan tanah air yaitu Iqbal Ramadhan.
+      
+      Setelah dijadikan sebagai salah satu lokasi syuting Bumi Manusia tempat ini semakin ramai dikunjungi wisatawan yang datang dari berbagai daerah, kebanyakan dari mereka penasaran dan ingin berfoto dengan latar bangunan yang dijadikan sebagai lokasi syuting film Bumi Manusia. Lalu setelah untuk kedua kalinya dijadikan sebagai lokasi syuting film layar lebar, julukan ‘Mini Hollywood’ semakin melekat pada Studio Alam Gamplong, dan terakhir sebagai catatan bagi siapapun yang ingin berkunjung ke tempat ini untuk menjaga bangunan dan fasilitas yang ada dengan baik dan tidak merusak apapun yang ada di tempat ini.
+    </p>
+  </section>
+
+  <div id="imagePopup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img src="" alt="Popup Image" id="popupImage">
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Sejarah Wisata Gamplong</p>
+  </footer>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function openPopup(imageUrl) {
+      document.getElementById("popupImage").src = imageUrl;
+      document.getElementById("imagePopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

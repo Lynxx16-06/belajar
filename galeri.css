@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+}
+.galeri-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    padding: 0px 0px;
+}
+.galeri-img img {
+    width: 100%;
+    height: 300px;
+}
+.galeri-box .galeri {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+.galeri .galeri-card {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.galeri .galeri-btn {
+    position: absolute;
+    bottom: -500px;
+    width: 100%;
+    height: 100%;
+    color: var(--bg-color-2);
+    text-align: center;
+    background: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(10px);
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.galeri-card:hover {
+    box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+.galeri-card:hover .galeri-btn {
+    bottom: 0px;
+}
+.galeri-btn button {
+    padding: 15px 45px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.galeri-img img {
+    border-radius: 10px;
+}
+.popup-box {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.popup-galeri, .popup-img {
+    width: 750px;
+    height: 400px;
+}
+.popup-img img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.tutup-popup {
+    width: auto;
+    margin-top: 20px;
+    padding: 15px 45px;
+    background-color: var(--bg-color-2);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease;
+}
+.tutup-popup:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.popup-anima {
+    animation:  popup 300ms forwards;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #111; /* Warna teks tombol */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff; /* Warna teks kepala */
+}

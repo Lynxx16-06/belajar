@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Wisata Rumah Kayu</title>
+  <link rel="stylesheet" href="rumah kayu.css">
+</head>
+<body>
+
+  <header>
+    <button class="back-button" onclick="goBack()">Kembali</button>
+    <h1> Wisata Rumah Kayu</h1>
+  </header>
+
+  <section class="history-content">
+    <div class="image-container">
+      <img src="img/galeri/galeri 6.jpg" class="history-img" alt="Sejarah Wisata" onclick="openPopup('img/galeri/galeri 6.jpg')">
+    </div>
+    <p>Wisata Rumah Kayu
+      sebenarnya saya tidak tau nama aslinya apa tapi saya namakan rumah kayu karna hapir setiap kita masuk kesana terdapat banyak rumah rumah yang menggunakan kayu
+      dan jarang sekali menggunakan semen atau besi, paling banyak menggunakan kayu. Sebab itu saya kasih nama rumah kayu, didalamnya bukan hanya terdapat kayu saja 
+      tapi juga terdapat barang barang antik seperti kaset radio lama dan minum minuman kerass juga terdapat disana. Jadi jika teman teman ini mengunjunginya itu sangat bagus 
+      </p>
+  </section>
+
+  <div id="imagePopup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img src="" alt="Popup Image" id="popupImage">
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Wisata Rumah Kayu</p>
+  </footer>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function openPopup(imageUrl) {
+      document.getElementById("popupImage").src = imageUrl;
+      document.getElementById("imagePopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

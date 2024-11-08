@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+    <link rel="stylesheet" href="galeri.css">
+</head>
+<body>
+
+    <header>
+        <button class="back-button" onclick="goBack()">Kembali</button>
+        <h1>Galeri Gamplong</h1>
+      </header>
+
+    <section id="galeri-malioboro">
+        <!-- bagian pop up galeri img -->
+        <div class="popup-box">
+          <div class="popup-galeri">
+            <div>
+              <div class="popup-img">
+                <img alt="" src="img/galeri/galeri-1.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="galeri-box">
+          <div class="galeri">
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri 2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri 3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri 4.jpg" alt="" />
+              </div>
+            </div>
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri 5.jpg" alt="" />
+              </div>
+            </div>
+            <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 6.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 7.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 8.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 11.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 10.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 12.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 13.jpg" alt="" />
+                </div>
+              </div>
+              <div class="galeri-card">
+                <div class="galeri-img">
+                  <img src="img/galeri/galeri 14.jpg" alt="" />
+                </div>
+              </div>
+
+              
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function openPopup(imageUrl) {
+      document.getElementById("popupImage").src = imageUrl;
+      document.getElementById("imagePopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

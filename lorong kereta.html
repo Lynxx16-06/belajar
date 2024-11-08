@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Wisata Lorong Kereta</title>
+  <link rel="stylesheet" href="lorong kerata.css">
+</head>
+<body>
+
+  <header>
+    <button class="back-button" onclick="goBack()">Kembali</button>
+    <h1> Wisata Lorong Kereta</h1>
+  </header>
+
+  <section class="history-content">
+    <div class="image-container">
+      <img src="img/galeri/galeri-1.jpg" class="history-img" alt="Sejarah Wisata" onclick="openPopup('img/galeri/galeri-1.jpg')">
+    </div>
+    <p>
+        Wisata Lorong Kereta
+        Kenapa saya namakan loro, itu karena sekilas seperti lorong dan lumayan sempit jikalau kereta itu melewati rel nya sedikit jalan bagi para pejalan kaki yang hendak melewatinya
+        nah sebab itu saya namakan lorong. Dan wisata ini juga banyak sekali orang orang yang suka berfoto foto karena tempatnya sangat bagus dan antik
+        banyak sekali disini barang barang antik seperti tempat isi bensin jaman dulu trs mobil mobil antik juga terdapat disana. dan lorong ini juga sering dijadikan
+        tempat lokasi syuting seperti sunan agung, habibie dll. Dan disini juga ada tempat makan atau kopi kopian yang enak yang bisa di nikmati oleh para pengunjung
+        yang tentunya tidak gratis ya harus bayar. 
+      </p>
+  </section>
+
+  <div id="imagePopup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img src="" alt="Popup Image" id="popupImage">
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Wisata Lorong Kereta</p>
+  </footer>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function openPopup(imageUrl) {
+      document.getElementById("popupImage").src = imageUrl;
+      document.getElementById("imagePopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

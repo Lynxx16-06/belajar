@@ -1,0 +1,559 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --bg-color: #191919;
+    --second-bg-color: #101010;
+    --main-color: rgb(255, 0, 0);
+    --text-color: #fff;
+    --second-color: #e4e4e4;
+    --other-color: #c6c9d8bf;
+    --h1-font: 7rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/Gambar\ WhatsApp\ 2024-01-06\ pukul\ 13.33.02_0250451d4444.jpg);
+    filter: saturate(150%);
+    box-shadow: #191919;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 11%;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+}
+
+span {
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-size: 35px;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease .40s;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover {
+    transform: scale(1.2);
+}
+
+#menu-icon {
+    font-size: 42px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 120px 19% 100px;
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url(img/Gambar\ WhatsApp\ 2024-01-06\ pukul\ 13.33.02_0250451d4444.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-text h3{
+    color: var(--second-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+    }
+
+.hero-text h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h1-font);
+    color: var(--text-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+    Letter-spacing: 2px;
+}
+    
+.hero-text h4 {
+    color: var(--second-color);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+
+.clik {
+    display: inline-block;
+    padding: 16px 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    transition: all ease .50s;
+}
+
+.clik:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+
+header.sticky{
+    padding: 15px 11%;
+    background: #000000;
+    border-bottom: 1px solid #4e4e4f;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.video {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(9px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+.box-video {
+    width: 1200px;
+    height: auto;
+}
+button {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding:9px 22px;
+    border-radius: 30px;
+    transition:.4s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+span{
+    color: blue;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left:8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 100px;
+}
+
+h3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+    width: 800px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    font-size:75px;
+    text-transform : capitalize;
+    margin-bottom :20px;
+}
+
+.about-text h5{
+    color:white;
+    letter-spacing :2px;
+    font-size :30px;
+    margin-bottom :25px ;
+    text-transform :capitalize ;
+}
+
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+
+.click{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.click:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.click-two{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.click-two:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.Wisata {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 65px;
+    width: 1130px;
+    margin:30 px auto;
+    text-align:center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px
+}
+
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background : #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: blue;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom:15 px;
+}
+
+.pra p {
+    color:#cfcfcf ;
+    font-size :16 px ;
+    line-height :27 px ;
+    margin-bottom : 25px;
+}
+
+.card .button {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding:9px 22px;
+    border-radius: 30px;
+    transition:.4s;
+}
+    
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.contact-in {
+    display: flex;
+    flex-wrap:nowrap;
+    padding: 110px;
+    background: var(--bg-color);
+}
+
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 70%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    height:auto;
+    padding: 30px;
+    flex :70%;
+    text-align: center;
+}
+
+.contact-form h1 {
+    margin-bottom: 30px;
+    font-size: 75px;
+}
+
+.contact-form-txt {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.contact-form-textarea{
+    width: 100%;
+    height: 100px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-textarea::placeholder{
+    color: var(--bg-color);
+}
+
+.contact-form-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: blue;
+    color: var(--text-color);
+    text-transform:uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+section {
+    padding: 85px 15% 70px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    background: #101010;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 150px;
+}
+
+.logo {
+    font-size: 33px;
+    color: white;
+    font-weight: 700;
+}
+
+span {
+    color: rgb(38, 38, 230);
+}
+
+.footer-content h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+}
+
+.footer-content li a {
+    display: block;
+    color: #d6d6d6;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: white;
+}
+
+.footer-content p {
+    color: #d6d6d6;
+    font: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.icon a {
+    display: inline-block;
+    font-size: 25px;
+    color: #d6d6d6;
+    margin-right: 20px;
+    transition: all .40s ease;
+}
+
+.icon a:hover {
+    color: white;
+    transform: translateY(-5px);
+}
